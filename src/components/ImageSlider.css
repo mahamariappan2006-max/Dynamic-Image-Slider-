@@ -1,0 +1,42 @@
+/* src/components/ImageSlider.css */
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.5s ease;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  background: rgba(42, 67, 101, 0.7);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+  transform: translateY(-50%);
+  transition: background 0.3s ease;
+}
+
+.arrow:hover {
+  background: rgba(42, 67, 101, 0.9);
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
